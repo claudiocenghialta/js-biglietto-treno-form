@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Acquista biglietto del treno</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calcola il tuo biglietto del treno</h1>
+        <form id="dati" class="box">
+            <div class="box-top">
+                <div class="box-top-dati">
+                    <label for="nome-cognome">Nome Cognome</label>
+                    <input id="nome-cognome" type="text">
+                </div>
+                <div class="box-top-dati">
+                    <label for="km">Km da percorrere</label>
+                    <input id="km" type="number" value="0">
+                </div>
+                <div class="box-top-dati">
+                    <label for="fascia-eta">Fascia d'età</label>
+                    <select name="fascia-eta" id="eta">
+                        <option value="">--Seleziona un opzione--</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box-bottom">
+                <button type="button" id="genera">Genera</button>
+                <button type="button" id="annulla">Annulla</button>
+            </div>
+        </form>
+        <h2>Il tuo biglietto</h2>
+        <div id="biglietto" class="box hidden">
+            <h3>DETTAGLIO PASSEGGERI</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tb-grey">NOME PASSEGGERO</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="td-name" class="tb-grey">Pippo</td>
+                        <td id="td-sconto">Sconto Minorenne</td>
+                        <td id="td-carrozza">7</td>
+                        <td id="td-codTreno">97928</td>
+                        <td id="td-costo">3.36 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

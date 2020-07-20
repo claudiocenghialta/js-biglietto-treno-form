@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background: rgb(238,9,89);
+    background: linear-gradient(90deg, rgba(238,9,89,1) 38%, rgba(218,29,132,1) 100%); 
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+h1, h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0 50px;
+}
+.box {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+#dati {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: #b8154f;
+    text-align: center;
+}
+.box-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box-top-dati {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80px;
+}
+.box-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.box-bottom button {
+    margin: 0 5px;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: inherit;
+}
+.hidden {
+    opacity: 0%;
+    transition: 0.3s;
+}
+.visible {
+    opacity: 100%;
+    transition: 0.3s;
+}
+table {
+    border: 1px solid grey;
+}
+
+table tr * {
+    height: 60px;
+    padding: 0 20px;
+    text-align: left;
+}
+.tb-grey {
+    background-color: grey;
+    border-bottom: 1px solid grey;
+    margin-bottom: 0;
+}
